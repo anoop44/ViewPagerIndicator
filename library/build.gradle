@@ -1,0 +1,27 @@
+apply plugin:'com.android.library'
+
+android{
+  compileSdkVersion 23
+  buildToolsVersion "23.0.1"
+
+  defaultConfig{
+
+    targetSdkVersion 23
+    minSdkVersion 9
+
+    versionCode 65
+    versionName "2.4.1"
+  }
+
+  sourceSets{
+    main{
+      java.srcDirs 'src'
+      res.srcDirs 'res'
+      manifest.srcFile 'AndroidManifest.xml'
+    }
+  }
+
+  dependencies{
+    compile 'com.android.support:support-v4:23.0.1'
+  }
+}
